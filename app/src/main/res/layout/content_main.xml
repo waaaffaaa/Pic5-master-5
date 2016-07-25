@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aj.afnan.pic5.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#d2d2d2">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogoIcon"
+        android:src="@drawable/logo_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_marginTop="10dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogoText"
+        android:src="@drawable/logotext"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_toStartOf="@+id/imageViewLogoIcon"
+        android:layout_toLeftOf="@+id/imageViewLogoIcon"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/relativeLayout"
+        android:layout_below="@+id/imageViewLogoIcon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            android:id="@+id/ButtonAboutApp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="عن التطبيق"
+            android:textSize="14dp"
+            android:drawableTop="@mipmap/infoo"
+            android:background="@drawable/square"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/ButtonContactUs"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonContactUs"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="اتصل بنا"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:drawableTop="@mipmap/contactus"
+            android:background="@drawable/square"
+            android:textColorLink="#ffffff"
+            android:layout_below="@+id/ButtonCalender"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold"
+            android:elegantTextHeight="false" />
+
+        <Button
+            android:id="@+id/ButtonFacility"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="المنشأة التدريبية"
+            android:textSize="14dp"
+            android:drawableTop="@drawable/facility"
+            android:background="@drawable/square"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/ButtonPrograms"
+            android:layout_alignLeft="@+id/ButtonGuides"
+            android:layout_alignStart="@+id/ButtonGuides"
+            android:layout_marginBottom="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonGuides"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="الأدلة واللوائح"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:drawableTop="@mipmap/guides"
+            android:background="@drawable/square"
+            android:layout_above="@+id/ButtonAboutApp"
+            android:layout_alignLeft="@+id/ButtonAboutApp"
+            android:layout_alignStart="@+id/ButtonAboutApp"
+            android:layout_marginBottom="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonManagement"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="عن الإدارة"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:drawableTop="@mipmap/aboutus"
+            android:background="@drawable/square"
+            android:layout_alignTop="@+id/ButtonFacility"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonForms"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="النماذج"
+            android:textSize="14dp"
+            android:drawableTop="@mipmap/pdf"
+            android:background="@drawable/square"
+            android:textColor="#ffffff"
+            android:layout_alignTop="@+id/ButtonAboutApp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonExams"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="الإختبارات"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/exams"
+            android:background="@drawable/square"
+            android:layout_below="@+id/ButtonManagement"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="22dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/ButtonCalender"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="التقويم التدريبي"
+            android:textSize="14dp"
+            android:drawableTop="@mipmap/calll"
+            android:background="@drawable/square"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/ButtonExams"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="22dp" />
+
+        <Button
+            android:id="@+id/ButtonPrograms"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:text="البرامج التدريبية"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+            android:drawableTop="@drawable/training"
+            android:background="@drawable/square"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.tvtc.gov.sa"
+        android:id="@+id/textViewWeb"
+        android:layout_marginTop="70sp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_toLeftOf="@+id/imageViewLogoIcon"
+        android:layout_toStartOf="@+id/imageViewLogoIcon"
+        android:paddingLeft="34sp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">إدارة التدريب الأهلي</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="Option_Name">
+        <item>من نحن</item>
+        <item>الفروع</item>
+        <item>رقم حساب الإدارة</item>
+        <item>موقع الويب</item>
+        <item>اين نحن؟</item>
+    </string-array>
+
+
+    <array name="OptionIcon">
+        <item>@mipmap/lamp</item>
+        <item>@mipmap/brancges</item>
+        <item>@mipmap/bank_acount</item>
+        <item>@mipmap/website</item>
+        <item>@mipmap/where_is_us</item>
+    </array>
+
+    <array name="MoveIcon">
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+        <item>@drawable/arrow_left</item>
+    </array>
+
+    <string-array name="Option_Name_ContactUs">
+        <item> راسلنا</item>
+        <item>أرقام التواصل </item>
+        <item>مقر الإدارة</item>
+        <item>تويتر</item>
+
+    </string-array>
+
+
+    <array name="OptionIcon_ContactUs">
+        <item>@drawable/email</item>
+        <item>@drawable/ic_phone_24dp</item>
+        <item>@drawable/location</item>
+        <item>@mipmap/twitter</item>
+    </array>
+
+
+    <string-array name="Option_Name_Guids">
+        <item>دليل تعليمات التدريب</item>
+        <item>القواعد والاجراءات التنفيذية للائحة التدريب في منشآت التدريب الأهلية</item>
+        <item>لائحة التدريب في منشآت التدريب الأهلي</item>
+        <item>لائحة تنظيم الشهادات الإحترافية</item>
+        <item>ضوابط الشهادات الإحترافية</item>
+    </string-array>
+
+    <string-array name="Option_Name_Forms">
+        <item> نماذج الرخص</item>
+        <item> نماذج الدبلوم أو البرامج التدريبيية</item>
+        <item> نماذج الدورات التأهيلية</item>
+        <item> نماذج الدورات التطويريية</item>
+        <item> التدريب التعاوني</item>
+        <item> المعادلات</item>
+        <item> الشهادات الإحترافية</item>
+
+    </string-array>
+
+
+    <string name="AboutUsText">
+
+<b>
+الهدف العام للإدارة :
+ </b>
+
+\n
+تنمية الموارد البشرية من خلال تشجيع القطاع الأهلي للاستثمار في التدريب بما يسهم في سد حاجة سوق العمل من القوى البشرية المؤهلة من خلال الترخيص للقطاع الأهلي بالتدريب والإشراف عليه وتحديد معاييره الفنية.
+\n
+  \n
+
+
+
+<b>
+  المهام :
+ </b>
+
+\n
+١/  الإشراف على اعداد الخطط والميزانية السنوية لنشاط التدريب الأهلي في اطار الأهداف والسياسات العامة للموسسة ومتابعة تنفيذها بعد إعتمادها.
+\n
+٢/ الإشراف على الوحدات الإدارية المرتبطة بها.
+\n
+٣/ الإشراف على تطبيق السياسات والأنظمة واللوائح والتعليمات المعتمدة في مجال التدريب الأهلي والوحدات التي تشرف عليها.
+\n
+٤/  إقتراح السياسات والخطط للتدريب في القطاع الأهلي.
+\n
+٥/  إعداد المعايير واللوائح والاجراءات اللازمة لتنظيم التدريب في القطاع الأهلي.
+\n
+ ٦/ الإشراف على تقييم وإعتماد المدربين العاملين في منشآت التدريب الأهلية وفق الاجراءات والضوابط المحددة.
+\n
+٧/  الإشراف على تقييم وإعتماد البرامج التدريبية المنفذة في منشآت التدريب الأهلية وفق الاجراءات والضوابط المحددة.
+\n
+٨/  الإشراف على تقويم العملية التدريبية في منشآت التدريب الأهلية بشكل دوري.
+\n
+
+\n
+<b>
+الأقسام :
+</b>
+\n
+١/ إدارة الرخص والإشراف والمتابعة.
+\n
+٢/ إدارة مراقبة الأداء وشؤون المتدربين.
+\n
+٣/ إدارة الشؤون الإدارية والمالية.
+
+
+
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>

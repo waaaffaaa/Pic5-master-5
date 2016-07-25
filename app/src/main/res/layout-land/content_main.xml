@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="aj.afnan.pic5.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#f54e4e">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogoIcon"
+        android:src="@drawable/logo_icon"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/ButtonPrograms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="من نحن؟"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:layout_alignTop="@+id/ButtonFacility"
+        android:layout_alignRight="@+id/imageViewLogoIcon"
+        android:layout_alignEnd="@+id/imageViewLogoIcon" />
+
+    <Button
+        android:id="@+id/ButtonExams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="النماذج"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:layout_alignTop="@+id/ButtonGuides"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/ButtonForms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="راسلنا"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_below="@+id/ButtonExams"
+        android:layout_alignRight="@+id/ButtonExams"
+        android:layout_alignEnd="@+id/ButtonExams"
+        android:layout_marginTop="31dp" />
+
+    <Button
+        android:id="@+id/ButtonCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="التقويم"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_alignTop="@+id/ButtonGuides"
+        android:layout_alignRight="@+id/imageViewLogoIcon"
+        android:layout_alignEnd="@+id/imageViewLogoIcon" />
+
+    <Button
+        android:id="@+id/ButtonGuides"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="المنشاءات التدريبية"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_below="@+id/ButtonFacility"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp" />
+
+    <Button
+        android:id="@+id/ButtonFacility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="البرامج التدريبية"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_alignTop="@+id/ButtonManagement"
+        android:layout_alignLeft="@+id/ButtonGuides"
+        android:layout_alignStart="@+id/ButtonGuides" />
+
+
+    <Button
+        android:id="@+id/ButtonManagement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="الفروع"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/imageViewLogoIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="١"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="#efbcbc"
+        android:layout_alignTop="@+id/ButtonAboutApp"
+        android:layout_alignLeft="@+id/ButtonCalender"
+        android:layout_alignStart="@+id/ButtonCalender" />
+
+
+    <Button
+        android:id="@+id/ButtonAboutApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="٢"
+        android:textSize="10sp"
+        android:drawableTop="@mipmap/aboutus"
+        android:background="@drawable/square"
+        android:layout_alignTop="@+id/ButtonForms"
+        android:layout_alignLeft="@+id/ButtonGuides"
+        android:layout_alignStart="@+id/ButtonGuides" />
+
+
+</RelativeLayout>

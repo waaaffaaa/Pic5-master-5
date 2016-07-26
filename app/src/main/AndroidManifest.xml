@@ -3,23 +3,27 @@
     package="aj.afnan.pic5">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     -->
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
          location permissions for the 'MyLocation' functionality. 
     -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/mainlogo"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        >
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -31,7 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManagementActivity" />
+        <activity android:name=".ManagementActivity"
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".AboutUs" />
         <activity android:name=".NoAccount" />
         <!--
@@ -57,12 +62,18 @@
         <activity android:name=".TrainingFacility" />
         <activity android:name=".Exams" />
         <activity android:name=".PDFView" />
-        <activity android:name=".ContactUs" />
+        <activity android:name=".ContactUs"
+            android:configChanges="orientation|screenSize"/>
         <activity android:name=".SendEmail" />
-        <activity android:name=".GuidesActivity" />
-        <activity android:name=".AboutApp" />
+        <activity android:name=".GuidesActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".AboutApp"
+            android:screenOrientation="portrait" />
         <activity android:name=".Calendar" />
-        <activity android:name=".Forms"></activity>
+        <activity android:name=".Forms"
+            android:configChanges="orientation|screenSize">
+
+        </activity>
     </application>
 
 </manifest>

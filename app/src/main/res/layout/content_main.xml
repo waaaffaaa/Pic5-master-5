@@ -191,11 +191,11 @@
         android:layout_height="wrap_content"
         android:text="www.tvtc.gov.sa"
         android:id="@+id/textViewWeb"
-        android:layout_marginTop="70sp"
         android:layout_below="@+id/relativeLayout"
-        android:layout_toLeftOf="@+id/imageViewLogoIcon"
-        android:layout_toStartOf="@+id/imageViewLogoIcon"
-        android:paddingLeft="34sp"/>
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp" />
 
 
 </RelativeLayout>

@@ -64,7 +64,7 @@ import java.util.List;
             if (position == 0) {
                 // Intent intent = new Intent (Intent.ACTION_VIEW , Uri.parse("http://tvtc.gov.sa/Arabic/Departments/Departments/pt/InformationCenter/ReportsAndGuides/Documents/training_guids.pdf"));
                 Intent intent = new Intent(getApplicationContext(), PDFView.class);
-                String name = "http://docs.google.com/gview?embedded=http://www.tvtc.gov.sa/Arabic/Departments/Departments/pt/InformationCenter/Files/Documents/ShortGraduate.pdf";
+                String name = "http://tvtc.gov.sa/Arabic/Departments/Departments/pt/InformationCenter/ReportsAndGuides/Documents/training_guids.pdf";
                 Bundle bundle = new Bundle();
                 bundle.putString("name", name);
                 intent.putExtras(bundle);

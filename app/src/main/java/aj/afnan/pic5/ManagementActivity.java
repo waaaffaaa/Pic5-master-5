@@ -2,6 +2,7 @@ package aj.afnan.pic5;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -90,8 +91,10 @@ public class ManagementActivity extends AppCompatActivity implements AdapterView
                 startActivity(intent);
             }
             if (position == 4) {
-                Intent AboutUs = new Intent(getApplicationContext(), MapsActivity.class);
-                startActivity(AboutUs);
+
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/place/الادارة+العامة+للتدريب+الأهلي%E2%80%AD/@24.7155432,46.7824191,15z/data=!4m12!1m6!3m5!1s0x0:0xdc93307c8a370f8!2z2KfZhNin2K_Yp9ix2Kkg2KfZhNi52KfZhdipINmE2YTYqtiv2LHZitioINin2YTYo9mH2YTZig!8m2!3d24.7155432!4d46.7824191!3m4!1s0x0:0xdc93307c8a370f8!8m2!3d24.7155432!4d46.7824191"));
+                startActivity(intent);
+
             }
 
         }

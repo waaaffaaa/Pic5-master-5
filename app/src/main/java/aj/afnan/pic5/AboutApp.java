@@ -23,6 +23,6 @@ public class AboutApp extends AppCompatActivity {
             }
         });
 
-      
+
     }
 }

@@ -71,7 +71,7 @@ public class SendEmail extends AppCompatActivity {
                 blank = false;
                 String to = textTo;
                 String subject = select; //textSubject.getText().toString();
-                String message = "Name : " + Name.getText().toString() + "\n ID number : " + ID.getText().toString() + "\n Phone Number : " + phone.getText().toString() + "\n Message : \n " + textMessage.getText().toString() + " \n  ";
+                String message = "الاسم: " + Name.getText().toString() + "\n رقم الهوية: " + ID.getText().toString() + "\n رقم الجوال: " + phone.getText().toString() + "\n  الرسالة:\n " + textMessage.getText().toString() + " \n  ";
 
                 Intent email = new Intent(Intent.ACTION_SEND);
                 email.putExtra(Intent.EXTRA_EMAIL, new String[]{to});
@@ -86,41 +86,38 @@ public class SendEmail extends AppCompatActivity {
                 if (Name.getText().length() == 0) {
                     Name.setError("حقل مطلوب");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (textMessage.getText().length() == 0) {
                     textMessage.setError("حقل مطلوب");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (ID.getText().length() == 0) {
                     ID.setError("حقل مطلوب");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (phone.getText().length() == 0) {
                     phone.setError("حقل مطلوب");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (phone.getText().length() < 10 && phone.getText().length() > 0 ) {
                     phone.setError("ادخل ١٠ آرقام");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (ID.getText().length() < 10 && ID.getText().length() > 0 ) {
                     ID.setError("ادخل ١٠ آرقام");
                     blank = true;
-                    Toast.makeText(getApplicationContext(), "اكمل البيانات", Toast.LENGTH_LONG).show();
                 }
                 if (select.equals("اختر")){
                     blank = true;
                     Toast.makeText(getApplicationContext(), "اختر تصنيف", Toast.LENGTH_LONG).show();
                 }
 
-                if ( phone.getText().toString().charAt(1) != '5' || phone.getText().toString().charAt(0) != '0' ) {
+                if ( (!phone.getText().toString().isEmpty())&&(phone.getText().toString().charAt(1) != '5' || phone.getText().toString().charAt(0) != '0' )) {
+                    if ( phone.getText().toString().charAt(0) != '٠' || phone.getText().toString().charAt(1) != '٥' )
                     phone.setError("ادخل رقم جوال صحيح");
                     blank = true;
+                }
+                if(blank){
                     Toast.makeText(getApplicationContext(), "اكمل البيانات" , Toast.LENGTH_LONG).show();
                 }
 

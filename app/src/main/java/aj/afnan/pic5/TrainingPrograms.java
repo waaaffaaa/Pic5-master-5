@@ -50,7 +50,6 @@ private ExpandableListView simpleExpandableListView;
 
 
 
-
         // setOnChildClickListener listener for child row click
         simpleExpandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override

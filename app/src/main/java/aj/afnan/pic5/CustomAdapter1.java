@@ -17,6 +17,10 @@ public class CustomAdapter1 extends BaseAdapter {
         Context context ;
         List<RowItem> rowItems;
 
+    public CustomAdapter1() {
+
+    }
+
     CustomAdapter1(Context context, List<RowItem> rowItems){
             this.context = context;
             this.rowItems = rowItems;

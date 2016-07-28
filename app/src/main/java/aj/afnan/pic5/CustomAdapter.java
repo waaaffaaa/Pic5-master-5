@@ -17,6 +17,10 @@ public class CustomAdapter extends BaseExpandableListAdapter {
     private Context context;
     private ArrayList<ExpandableListGroupInfo> deptList;
 
+    public CustomAdapter() {
+
+    }
+
     public CustomAdapter(Context context, ArrayList<ExpandableListGroupInfo> deptList) {
         this.context = context;
         this.deptList = deptList;

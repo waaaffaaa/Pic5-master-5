@@ -3,6 +3,7 @@ package aj.afnan.pic5;
 
     import android.content.Intent;
     import android.os.Bundle;
+    import android.os.Process;
     import android.support.design.widget.FloatingActionButton;
     import android.support.v7.app.AppCompatActivity;
     import android.view.View;
@@ -32,7 +33,11 @@ package aj.afnan.pic5;
                 @Override
                 public void onClick(View view) {
                     Intent Home = new Intent(getApplicationContext(), MainActivity.class);
+                    Home.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(Home);
+
+
+
                 }
             });
 

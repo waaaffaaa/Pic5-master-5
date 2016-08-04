@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Process;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -33,14 +34,17 @@ public class ManagementActivity extends AppCompatActivity implements AdapterView
         //getSupportActionBar().setTitle("عن الادارة");
 
 
-        setTitle("عن الادارة"); //title of activity
+        setTitle("عن الإدارة"); //title of activity
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab); //home icon
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent Home = new Intent(getApplicationContext(), MainActivity.class);
+                Home.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(Home);
+
+
             }
         });
 
@@ -98,6 +102,7 @@ public class ManagementActivity extends AppCompatActivity implements AdapterView
             }
 
         }
+
 
 
     }

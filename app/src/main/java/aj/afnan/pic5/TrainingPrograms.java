@@ -32,7 +32,9 @@ private ExpandableListView simpleExpandableListView;
             @Override
             public void onClick(View view) {
                 Intent Home = new Intent(getApplicationContext(), MainActivity.class);
+                Home.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(Home);
+
             }
         });
 
@@ -48,6 +50,7 @@ private ExpandableListView simpleExpandableListView;
         //expand all the Groups
         // expandAll();
 
+        collapseAll();
 
 
         // setOnChildClickListener listener for child row click
@@ -102,7 +105,7 @@ private ExpandableListView simpleExpandableListView;
                     });
                 }
 
-                return true;
+                return false;
             }
         });
         // setOnGroupClickListener listener for group heading click

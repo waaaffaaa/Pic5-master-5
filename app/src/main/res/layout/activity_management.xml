@@ -8,7 +8,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="aj.afnan.pic5.ManagementActivity"
     android:background="#D2D2D2"
-    android:transitionName="عن الادارة">
+    android:transitionName="عن الإدارة">
 
 
     <android.support.design.widget.FloatingActionButton

@@ -37,6 +37,7 @@ public class Forms extends AppCompatActivity implements AdapterView.OnItemClickL
                 @Override
                 public void onClick(View view) {
                     Intent Home = new Intent(getApplicationContext(), MainActivity.class);
+                    Home.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(Home);
                 }
             });

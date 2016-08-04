@@ -3,6 +3,7 @@ package aj.afnan.pic5;
 import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.os.Process;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -14,7 +15,6 @@ import java.util.List;
 
 
     public class GuidesActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
-
         String[] Option_names;
         TypedArray Move_id;
 
@@ -36,7 +36,9 @@ import java.util.List;
                 @Override
                 public void onClick(View view) {
                     Intent Home = new Intent(getApplicationContext(), MainActivity.class);
+                    Home.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(Home);
+
                 }
             });
 
@@ -70,8 +72,6 @@ import java.util.List;
                 intent.putExtras(bundle);
                 startActivity(intent);
 
-                //  Intent i = new Intent(getApplicationContext(), PDFView.class);
-                startActivity(intent);
 
 
             }
